@@ -6,7 +6,7 @@ RSpec.feature "Users can delete projects" do
 
         visit "/"
         click_link "Visual Studio Code"
-        click_link "Delete Project"
+        click_button "Delete Project"
 
         expect(page).to have_content "Project has been deleted."
         expect(page.current_url).to eq projects_url

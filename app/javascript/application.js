@@ -2,3 +2,6 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 require("bootstrap");
+import 'jquery'
+import 'popper.js'
+import 'bootstrap'
