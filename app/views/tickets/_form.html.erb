@@ -1,0 +1,10 @@
+<%= bootstrap_form_with(model: [project, ticket], local: true, label_errors: true) do |form| %>
+<%= form.text_field :name %>
+    <%= form.text_field :description %>
+
+    <%= form.primary %>
+<% end %>
+
+
+
+    
