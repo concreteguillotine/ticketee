@@ -7,6 +7,7 @@ class TicketsController < ApplicationController
     end
 
     def show
+        @comment = @ticket.comments.build
     end
 
     def create
