@@ -1,8 +1,12 @@
 @import "bootstrap";
 
 .comment {
-    @extend .border, .rounded;
+    @extend .border, .rounded, .mb-2;
     border-width: 2px;
+
+    + .comment {
+        @extend .mt-4;
+    }
 
     .author {
         @extend .text-secondary, .p-2;
@@ -13,6 +17,10 @@
 
     .text {
         @extend .p-2;
+    }
+
+    .state_change {
+        @extend .my-2;
     }
 
     p:last-of-type {
