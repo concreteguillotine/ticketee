@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
     <title>
     <% if content_for?(:title) %>
       <%= yield :title %>
@@ -8,12 +9,22 @@
       Ticketee
     <% end %>
     </title>
+
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+
+    <style>
+      <% State.all.each do |state| %>
+        .state-<%= state.name.parameterize %> {
+          background-color: <%= state.color %>;
+        }
+        <% end %>
+    </style>
+
   </head>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">

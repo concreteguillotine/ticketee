@@ -1,0 +1,12 @@
+@import "bootstrap";
+
+.state {
+    @extend .rounded, .px-2, .py-1;
+    display: inline-block;
+    font-size: 110%;
+    color: rgb(3, 2, 2);
+}
+
+.tickets li {
+    @extend .mb-1;
+}
