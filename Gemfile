@@ -72,6 +72,7 @@ group :test do
   gem "factory_bot_rails"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "email_spec", "~> 2.2.0", require: false
 end
 
 gem "bootstrap", "~> 5.1"
