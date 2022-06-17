@@ -82,3 +82,5 @@ gem "font-awesome-rails", "~> 4.7"
 gem "bootstrap_form", "~> 5.0"
 
 gem "devise"
+
+gem "premailer-rails", "~> 1.11"
