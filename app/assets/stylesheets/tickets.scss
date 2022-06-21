@@ -38,3 +38,18 @@
         @extend .fa-eye-slash;
     }
 }
+
+.tag {
+    @extend .state, .mb-1, .border;
+    color: black;
+    font-size: 85%;
+
+    a {
+        color: black;
+        &.remove {
+            font-family: "FontAwesome";
+            @extend .fa-close;
+            text-decoration: none;
+        }
+    }
+}
